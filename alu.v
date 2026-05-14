@@ -105,7 +105,7 @@ module alu #(parameter data_width=8)(
             t_err=1; t_res=rotate_right(s_opa,s_opb[2:0]);
           end else t_res=rotate_right(s_opa,s_opb[2:0]);
         end
-        default: t_err = 1; // FIX: Fallback for invalid cmds (TC 8)
+        default: t_err = 1; 
       endcase
     end
     else begin
@@ -147,7 +147,7 @@ module alu #(parameter data_width=8)(
           if(inp_valid == 3) process_r = shl_opa * s_opb;
           else t_err=1;
         end
-        default: t_err = 1; // FIX: Fallback for invalid cmds (TC 7)
+        default: t_err = 1; 
       endcase
     end
   end
