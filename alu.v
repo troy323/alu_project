@@ -8,7 +8,7 @@ module alu #(parameter data_width=8)(
   output reg oflow, cout, g, l, e, err,
   output reg [2*data_width-1:0] res
 );
-
+//
   // mode=0
   localparam And=0, Nand=1, Or=2, Nor=3, Xor=4, Xnor=5, Not_a=6, Not_b=7;
   localparam shl_a=8, shl_b=9, shr_a=10, shr_b=11, rol_a=12, ror_a=13;
